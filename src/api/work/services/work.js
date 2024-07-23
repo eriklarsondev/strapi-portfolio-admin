@@ -17,7 +17,6 @@ module.exports = createCoreService('api::work.work', ({ strapi }) => ({
         job.technologies = job.technologies.split(',').map(item => item.trim())
       }
     })
-
     return experience
   }
 }))
