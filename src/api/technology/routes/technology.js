@@ -6,4 +6,11 @@
 
 const { createCoreRouter } = require('@strapi/strapi').factories
 
-module.exports = createCoreRouter('api::technology.technology')
+module.exports = createCoreRouter('api::technology.technology', {
+  only: ['find'],
+  config: {
+    find: {
+      auth: false
+    }
+  }
+})
