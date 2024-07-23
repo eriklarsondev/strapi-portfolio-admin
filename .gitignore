@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.strapi
+.tmp
+
+node_modules
+package-lock.json
+
+build
+dist
+types/generated
+
+public/uploads
+
+.strapi-updater.json
