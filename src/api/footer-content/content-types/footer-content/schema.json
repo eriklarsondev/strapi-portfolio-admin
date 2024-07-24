@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_contents",
+  "info": {
+    "singularName": "footer-content",
+    "pluralName": "footer-contents",
+    "displayName": "Footer Content"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "contactInfo": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "copyright": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}
