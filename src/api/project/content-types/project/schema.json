@@ -45,6 +45,10 @@
         "preset": "light"
       },
       "customField": "plugin::ckeditor.CKEditor"
+    },
+    "seo": {
+      "type": "component",
+      "component": "meta.seo"
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "services",
+  "collectionName": "pages",
   "info": {
-    "singularName": "service",
-    "pluralName": "services",
-    "displayName": "Service"
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
   },
   "options": {
     "draftAndPublish": false
@@ -21,13 +21,10 @@
     "description": {
       "type": "text"
     },
-    "content": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "light"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+    "controls": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu-item"
     },
     "seo": {
       "type": "component",

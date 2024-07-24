@@ -25,7 +25,7 @@ module.exports = createCoreService('api::project.project', ({ strapi }) => ({
   async fetchById(id) {
     let project = await strapi.query('api::project.project').findOne({
       where: { slug: id },
-      populate: ['image']
+      populate: ['image', 'seo']
     })
 
     if (project) {
